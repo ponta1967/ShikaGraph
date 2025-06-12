@@ -4,7 +4,7 @@
     "category": "restoration",
     "name_ja": "CR",
     "name_en": "Composite Resin",
-    "file": "restoration/cr.svg",
+    "file": "restoration/cr.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -13,7 +13,7 @@
     "category": "restoration",
     "name_ja": "In",
     "name_en": "Inlay",
-    "file": "restoration/in.svg",
+    "file": "restoration/in.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -22,7 +22,7 @@
     "category": "restoration",
     "name_ja": "GIn",
     "name_en": "Gold Inlay",
-    "file": "restoration/gin.svg",
+    "file": "restoration/gin.png",
     "style": "gold",
     "bg_color": "#DAA520"
   },
@@ -31,7 +31,7 @@
     "category": "restoration",
     "name_ja": "CADIn",
     "name_en": "CAD Inlay",
-    "file": "restoration/cadin.svg",
+    "file": "restoration/cadin.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -40,7 +40,7 @@
     "category": "restoration",
     "name_ja": "P.In",
     "name_en": "Pin Inlay",
-    "file": "restoration/pin.svg",
+    "file": "restoration/pin.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -49,7 +49,7 @@
     "category": "restoration",
     "name_ja": "3/4Cr.",
     "name_en": "3/4 Crown",
-    "file": "restoration/3_4cr.svg",
+    "file": "restoration/3_4cr.png",
     "style": "metal",
     "bg_color": "#DDDDDD"
   },
@@ -58,7 +58,7 @@
     "category": "restoration",
     "name_ja": "4/5Cr.",
     "name_en": "4/5 Crown",
-    "file": "restoration/4_5cr.svg",
+    "file": "restoration/4_5cr.png",
     "style": "metal",
     "bg_color": "#DDDDDD"
   },
@@ -67,7 +67,7 @@
     "category": "restoration",
     "name_ja": "FMCr.",
     "name_en": "Full Metal Crown",
-    "file": "restoration/fmcr.svg",
+    "file": "restoration/fmcr.png",
     "style": "metal",
     "bg_color": "#DDDDDD"
   },
@@ -76,7 +76,7 @@
     "category": "restoration",
     "name_ja": "GCr.",
     "name_en": "Gold Crown",
-    "file": "restoration/gcr.svg",
+    "file": "restoration/gcr.png",
     "style": "gold",
     "bg_color": "#DAA520"
   },
@@ -85,7 +85,7 @@
     "category": "restoration",
     "name_ja": "CADCr.",
     "name_en": "CAD Crown",
-    "file": "restoration/cadcr.svg",
+    "file": "restoration/cadcr.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -94,7 +94,7 @@
     "category": "restoration",
     "name_ja": "ZirCr.",
     "name_en": "Zirconia Crown",
-    "file": "restoration/zircr.svg",
+    "file": "restoration/zircr.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -103,7 +103,7 @@
     "category": "restoration",
     "name_ja": "MB",
     "name_en": "Maryland Bridge",
-    "file": "restoration/mb.svg",
+    "file": "restoration/mb.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -112,7 +112,7 @@
     "category": "restoration",
     "name_ja": "ZirPCr.",
     "name_en": "Zirconia Porcelain Crown",
-    "file": "restoration/zirpcr.svg",
+    "file": "restoration/zirpcr.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -121,7 +121,7 @@
     "category": "restoration",
     "name_ja": "Br.",
     "name_en": "Bridge",
-    "file": "restoration/br.svg",
+    "file": "restoration/br.png",
     "style": "bridge",
     "bg_color": "#AEDFF7"
   },
@@ -130,7 +130,7 @@
     "category": "restoration",
     "name_ja": "DT",
     "name_en": "Denture",
-    "file": "restoration/dt.svg",
+    "file": "restoration/dt.png",
     "style": "denture",
     "bg_color": "#FFC0CB"
   },
@@ -139,7 +139,7 @@
     "category": "restoration",
     "name_ja": "インプラント",
     "name_en": "Implant",
-    "file": "restoration/imp.svg",
+    "file": "restoration/imp.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -148,7 +148,7 @@
     "category": "diagnosis",
     "name_ja": "健全歯",
     "name_en": "HealthTooth",
-    "file": "diagnosis/healthtooth.svg",
+    "file": "diagnosis/healthtooth.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -157,7 +157,7 @@
     "category": "diagnosis",
     "name_ja": "虫歯",
     "name_en": "Caries",
-    "file": "diagnosis/caries.svg",
+    "file": "diagnosis/caries.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -166,7 +166,7 @@
     "category": "diagnosis",
     "name_ja": "二次カリエス",
     "name_en": "2ndCaries",
-    "file": "diagnosis/2ndcaries.svg",
+    "file": "diagnosis/2ndcaries.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -175,7 +175,7 @@
     "category": "diagnosis",
     "name_ja": "歯牙破折",
     "name_en": "ToothFructure",
-    "file": "diagnosis/toothfructure.svg",
+    "file": "diagnosis/toothfructure.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -184,7 +184,7 @@
     "category": "diagnosis",
     "name_ja": "歯髄炎",
     "name_en": "Pul",
-    "file": "diagnosis/pul.svg",
+    "file": "diagnosis/pul.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -193,7 +193,7 @@
     "category": "diagnosis",
     "name_ja": "急化Per",
     "name_en": "KyukaPer",
-    "file": "diagnosis/kyukaper.svg",
+    "file": "diagnosis/kyukaper.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -202,7 +202,7 @@
     "category": "diagnosis",
     "name_ja": "慢化Per",
     "name_en": "MankaPer",
-    "file": "diagnosis/mankaper.svg",
+    "file": "diagnosis/mankaper.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -211,7 +211,7 @@
     "category": "diagnosis",
     "name_ja": "歯根破折",
     "name_en": "RootFructure",
-    "file": "diagnosis/rootfructure.svg",
+    "file": "diagnosis/rootfructure.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -220,7 +220,7 @@
     "category": "diagnosis",
     "name_ja": "歯石",
     "name_en": "Calcus",
-    "file": "diagnosis/calcus.svg",
+    "file": "diagnosis/calcus.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -229,7 +229,7 @@
     "category": "diagnosis",
     "name_ja": "歯周病",
     "name_en": "Perio",
-    "file": "diagnosis/perio.svg",
+    "file": "diagnosis/perio.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -238,7 +238,7 @@
     "category": "diagnosis",
     "name_ja": "ホープレス歯",
     "name_en": "HopelessTooth",
-    "file": "diagnosis/hopelesstooth.svg",
+    "file": "diagnosis/hopelesstooth.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -247,7 +247,7 @@
     "category": "diagnosis",
     "name_ja": "欠損歯",
     "name_en": "MissingTooth",
-    "file": "diagnosis/missingtooth.svg",
+    "file": "diagnosis/missingtooth.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -256,7 +256,7 @@
     "category": "diagnosis",
     "name_ja": "DT",
     "name_en": "DentureExisting",
-    "file": "diagnosis/existing_dt.svg",
+    "file": "diagnosis/existing_dt.png",
     "style": "denture",
     "bg_color": "#FFC0CB"
   },
@@ -265,7 +265,7 @@
     "category": "diagnosis",
     "name_ja": "インプラント",
     "name_en": "ImplantExisting",
-    "file": "diagnosis/existing_implant.svg",
+    "file": "diagnosis/existing_implant.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   },
@@ -274,7 +274,7 @@
     "category": "diagnosis",
     "name_ja": "初期齲蝕",
     "name_en": "Initial Caries",
-    "file": "diagnosis/syotisi.svg",
+    "file": "diagnosis/syotisi.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -283,7 +283,7 @@
     "category": "treatment_plan",
     "name_ja": "C処置",
     "name_en": "CariesTr",
-    "file": "treatment_plan/cariest.svg",
+    "file": "treatment_plan/cariest.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -292,7 +292,7 @@
     "category": "treatment_plan",
     "name_ja": "抜髄",
     "name_en": "Pulpect",
-    "file": "treatment_plan/pulpect.svg",
+    "file": "treatment_plan/pulpect.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -301,7 +301,7 @@
     "category": "treatment_plan",
     "name_ja": "RCT",
     "name_en": "RCT",
-    "file": "treatment_plan/rct.svg",
+    "file": "treatment_plan/rct.png",
     "style": "standard",
     "bg_color": "#FFFFFF"
   },
@@ -310,7 +310,7 @@
     "category": "treatment_plan",
     "name_ja": "抜歯",
     "name_en": "ToothExtPlanned",
-    "file": "treatment_plan/plan_toothext.svg",
+    "file": "treatment_plan/plan_toothext.png",
     "style": "standard",
     "bg_color": "#FFB370"
   },
@@ -319,7 +319,7 @@
     "category": "treatment_plan",
     "name_ja": "インプラント",
     "name_en": "ImplantPlanned",
-    "file": "treatment_plan/plan_implant.svg",
+    "file": "treatment_plan/plan_implant.png",
     "style": "esthetic",
     "bg_color": "#FFFFFF"
   }
