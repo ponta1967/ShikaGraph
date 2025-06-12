@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ShikaGraph</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- キャンバスエリア：Fabric.jsに対応した単一キャンバス構造 -->
+    <div class="draw-area">
+      <canvas id="canvas"></canvas>
+      <div id="cursorContainer"></div>
+    </div>
+
+    <!-- ツールエリア -->
+    <div class="tool-area">
+      <!-- タブボタン：5つのタブ (TBIタブを追加) -->
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="DLW">DLW</button>
+        <button class="tab-button" data-tab="DIAG">DIAG</button>
+        <button class="tab-button" data-tab="TBI">TBI</button>
+        <button class="tab-button" data-tab="PLN">PLN</button>
+        <button class="tab-button" data-tab="REST">REST</button>
+      </div>
+
+      <!-- リロードボタン -->
+      <button class="reload-button" id="resetCanvasBtn">
+        <img src="assets/tool/Reload.png" alt="Reload">
+      </button>
+
+      <!-- タブコンテンツ領域 -->
+      <div class="tab-content">
+        <!-- DLW (描画) タブ -->
+        <div id="DLW" class="tab-pane active">
+          <button id="freeDrawBtn" class="tool-button">
+            <img src="assets/tool/FreeDraw.png" alt="Free Draw">
+            <span class="button-text">フリーハンド</span>
+          </button>
+          <div class="color-buttons">
+            <button class="color-button" data-color="black">
+              <img src="assets/tool/C-Black.png" alt="Black">
+            </button>
+            <button class="color-button" data-color="red">
+              <img src="assets/tool/C-Red.png" alt="Red">
+            </button>
+            <button class="color-button" data-color="blue">
+              <img src="assets/tool/C-Blue.png" alt="Blue">
+            </button>
+          </div>
+          <div class="line-width-buttons">
+            <button class="line-width-button" data-width="2">細</button>
+            <button class="line-width-button" data-width="5">中</button>
+            <button class="line-width-button" data-width="10">太</button>
+          </div>
+          <button id="eraserBtn" class="tool-button">
+            <img src="assets/tool/Eraser.png" alt="Eraser">
+            <span class="button-text">消しゴム</span>
+          </button>
+          
+          <!-- テキストツール追加 -->
+          <button id="textBtn" class="tool-button">
+            <img src="assets/tool/TextMode.png" alt="Text">
+            <span class="button-text">テキスト</span>
+          </button>
+          <div class="text-options-container" style="display: none;">
+            <div class="text-options-label">テキスト色:</div>
+            <div class="text-color-options">
+              <div class="text-color-btn" data-color="black" style="background-color: black;"></div>
+              <div class="text-color-btn" data-color="red" style="background-color: red;"></div>
+              <div class="text-color-btn" data-color="blue" style="background-color: blue;"></div>
+            </div>
+            <div class="text-options-label">テキストサイズ:</div>
+            <div class="text-size-options">
+              <button class="text-size-btn" data-size="16">小</button>
+              <button class="text-size-btn" data-size="24">中</button>
+              <button class="text-size-btn" data-size="32">大</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIAG (診断) タブ -->
+        <div id="DIAG" class="tab-pane">
+          <div class="tab-header">診断アイコン</div>
+          <div class="stamp-buttons diagnosis-icons" id="diagnosisIcons">
+            <!-- アイコンはJavaScriptで動的に生成します -->
+          </div>
+        </div>
+
+        <!-- TBI タブ (新規追加) -->
+        <div id="TBI" class="tab-pane">
+          <div class="tab-header">TBIアイコン</div>
+          <div class="stamp-buttons tbi-icons" id="tbiIcons">
+            <!-- アイコンはJavaScriptで動的に生成します -->
+          </div>
+        </div>
+
+        <!-- PLN (治療計画) タブ -->
+        <div id="PLN" class="tab-pane">
+          <div class="tab-header">治療計画アイコン</div>
+          <div class="stamp-buttons treatment-plan-icons" id="treatmentPlanIcons">
+            <!-- アイコンはJavaScriptで動的に生成します -->
+          </div>
+        </div>
+
+        <!-- REST (修復物) タブ -->
+        <div id="REST" class="tab-pane">
+          <div class="tab-header">修復物アイコン</div>
+          <div class="stamp-buttons restoration-icons" id="restorationIcons">
+            <!-- アイコンはJavaScriptで動的に生成します -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 操作メニュー -->
+  <div class="operation-menu">
+    <button id="undoBtn" class="op-button" disabled>元に戻す</button>
+    <button id="redoBtn" class="op-button" disabled>やり直す</button>
+    <button id="saveBtn" class="op-button">保存</button>
+    <button id="loadBtn" class="op-button">読込</button>
+  </div>
+
+  <!-- Fabric.js ライブラリ -->
+  <script src="lib/fabric.min.js"></script>
+
+  <!-- ユーティリティ -->
+  <script src="JAVA/Utils.js"></script>
+  <script src="JAVA/DebugUtil.js"></script>
+
+  <!-- コアモジュール - 最初に読み込む必要がある -->
+  <script src="JAVA/CanvasManager.js"></script>
+  
+  <!-- 各モード - コアモジュールに依存 -->
+  <script src="JAVA/DrawMode.js"></script>
+  <script src="JAVA/TextMode.js"></script>
+  
+  <!-- アイコン管理 -->
+  <script src="JAVA/IconManager.js"></script>
+  <script src="JAVA/StampMode.js"></script>
+
+  <!-- メインアプリケーション - すべてのモジュールが読み込まれた後 -->
+  <script src="JAVA/Main.js"></script>
+</body>
+</html>
